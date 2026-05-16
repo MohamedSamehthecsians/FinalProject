@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.js
+!*.config.js
+.env
+package-lock.json
+package.json
+tsconfig.json

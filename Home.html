@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">مستشفى الشفاء</title>
+    <link rel="stylesheet" href="styles/Home.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo" id="logoText">مستشفى الشفاء</div>
+            <ul class="nav-links">
+                <li><a href="About.html" id="aboutLink">عن المستشفى</a></li>
+                <li><a href="Shop.html" id="shopLink">المتجر الطبي</a></li>
+                <li><a href="#book" class="book-btn" id="bookLink">احجز الآن</a></li>
+                <li><button id="langBtn" class="lang-btn">English</button></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="heroTitle">رعايتكم هي أولويتنا دائمًا</h1>
+                <p id="heroDesc">نقدم أفضل الخدمات الطبية برعاية أمهر الأطباء والمتخصصين بأحدث الأجهزة.</p>
+                <button id="mainBookBtn">ابدأ الحجز الآن</button>
+            </div>
+        </header>
+        <section class="services">
+            <h2 id="servicesTitle">أقسامنا الطبية</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3 id="card1Title">عيادة الأطفال</h3>
+                    <p id="card1Desc">رعاية متكاملة لصحة أطفالكم الطبية والنفسية.</p>
+                </div>
+                <div class="card">
+                    <h3 id="card2Title">طوارئ 24 ساعة</h3>
+                    <p id="card2Desc">مستعدون لاستقبال كافة الحالات الحرجة على مدار الساعة.</p>
+                </div>
+                <div class="card">
+                    <h3 id="card3Title">العمليات الجراحية</h3>
+                    <p id="card3Desc">غرفة عمليات مجهزة بأحدث التقنيات العالمية.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p id="footerText">جميع الحقوق محفوظة © مستشفى الشفاء 2026</p>
+        </footer>
+    </div>
+    <div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModalBtn" class="close-btn">&times;</span>
+        <h2 id="modalTitle">حجز موعد جديد</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label id="labelName" for="patientName">الاسم بالكامل:</label>
+                <input type="text" id="patientName" required>
+            </div>
+            <div class="form-group">
+                <label id="labelPhone" for="patientPhone">رقم الهاتف:</label>
+                <input type="tel" id="patientPhone" required>
+            </div>
+            <div class="form-group">
+                <label id="labelSpecialty" for="specialtySelect">التخصص المطلوب:</label>
+                <select id="specialtySelect" required>
+                    <option value="" id="optSpecialtyDefault">اختر التخصص</option>
+                    <option value="pediatrics" id="optPediatrics">عيادة الأطفال</option>
+                    <option value="surgery" id="optSurgery">العمليات الجراحية</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label id="labelDoctor" for="doctorSelect">اسم الدكتور:</label>
+                <select id="doctorSelect" required>
+                    <option value="" id="optDoctorDefault">اختر الطبيب</option>
+                    <option value="dr1">د. أحمد محمد</option>
+                    <option value="dr2">د. سارة علي</option>
+                </select>
+            </div>
+            <button type="submit" id="submitBookingBtn">تأكيد الحجز</button>
+        </form>
+    </div>
+</div>
+</body>
+<script type="module" src="dist/Home.js"></script>
+</html>

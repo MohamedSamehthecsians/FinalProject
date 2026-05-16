@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">المتجر الطبي - مستشفى الشفاء</title>
+    <link rel="stylesheet" href="styles/Shop.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="logo" id="logoText">مستشفى الشفاء</div>
+            <ul class="nav-links">
+                <li><a href="Home.html" id="homeLink">الرئيسية</a></li>
+                <li><a href="about.html" id="aboutLink">عن المستشفى</a></li>
+                <li><span id="favText">المفضلة</span> (<span id="favCount">0</span>)</li>
+                <li><span id="cartText">السلة</span> (<span id="cartCount">0</span>)</li>
+                <li><button id="langBtn" class="lang-btn">English</button></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="shopTitle">المتجر الطبي الإلكتروني</h1>
+                <p id="shopSub">تسوق أفضل الأجهزة والمستلزمات الطبية المعتمدة بجودة عالية.</p>
+            </div>
+        </header>
+        <main class="shop-container">
+            <div class="products-grid" id="productsGrid"></div>
+        </main>
+        <footer class="footer">
+            <p id="footerText">جميع الحقوق محفوظة © مستشفى الشفاء 2026</p>
+        </footer>
+    </div>
+    <script type="module" src="dist/shop.js"></script>
+</body>
+</html>

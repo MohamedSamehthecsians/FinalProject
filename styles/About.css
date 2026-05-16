@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+.navbar {
+    background-color: #0056b3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-links li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-links .book-btn {
+    background-color: white;
+    color: #0056b3;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.nav-links .book-btn:hover {
+    background-color: #e6f0fa;
+    text-decoration: none;
+}
+.lang-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.lang-btn:hover {
+    background-color: white;
+    color: #0056b3;
+}
+.hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 3px solid #0056b3;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero h1 {
+    color: #0056b3;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 18px;
+    color: #444;
+}
+.about-details {
+    padding: 60px 20px;
+    text-align: center;
+    flex: 1;
+}
+.info-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #0056b3;
+    padding: 40px;
+    border-radius: 8px;
+}
+.info-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
